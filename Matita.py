@@ -20,7 +20,7 @@ clear = lambda: os.system('cls')
 
 #inicio das instruções
 print_slow("As instruções para formar a figura são as seguintes:\n utilize F para seguir em linha reta e desenhar\n f para seguir em linha reta mas sem desenhar\n + para virar a esquerda com angulação de 90°\n - para virar a direita com angulação de 90°   ")
-desenhar=str(input("Digite os comandos\n->"))
+desenhar=str(input("\nDigite os comandos\n->"))
 time.sleep(0.1)
 clear()
 numero=int(input("Quantas repetições?"))
@@ -42,3 +42,4 @@ for i in desenhar:
         tt.left(90)
     if i == '-':
         tt.right(90)
+exitonclick()
